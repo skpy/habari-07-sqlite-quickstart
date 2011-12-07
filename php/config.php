@@ -6,7 +6,6 @@
 
 // https://www.redhat.com/openshift/kb/kb-e1002/deploying-openshift-express-applications-using-sqlite
 
-//$path = str_replace('runtime/repo/php', 'data', dirname(__FILE__));
 $path = $_ENV['OPENSHIFT_DATA_DIR'];
 
 Config::set( 'db_connection', array(
